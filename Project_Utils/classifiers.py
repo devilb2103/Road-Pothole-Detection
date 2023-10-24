@@ -1,7 +1,7 @@
 import os
 import numpy as np
 import pandas as pd
-import cv2
+import cv
 import matplotlib.pyplot as plt
 from tensorflow.keras.models import load_model
 import tensorflow.keras.backend as K
