@@ -9,7 +9,7 @@ from Project_Utils.classifiers import predict_image_class
 
 
 def main():
-    st.set_page_config(layout="wide")
+    st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
     initializeSessionVariables(st)
     st.title("Binary Pothole Classification")
 
