@@ -87,9 +87,9 @@ def main():
             pred = "Pothole Image"
             if(prediction[0]["HOG_LBP_Models"][acc_model_id] == 0): pred = "Plain Image"
             st.text(f'Image Class: {pred}')
-            if(prediction[0]["HOG_LBP_Models"][acc_model_id] == 1):
-                st.text("Segmented Output")
-                st.image(prediction[2])
+            # if(prediction[0]["HOG_LBP_Models"][acc_model_id] == 1):
+            #     st.text("Segmented Output")
+            #     st.image(prediction[2])
             expander = st.expander("More Info")
             with expander:
                 st.write(f"Note: Model - {acc_model_id} is used for predicting image class since it has the highest accuracy of 91%")

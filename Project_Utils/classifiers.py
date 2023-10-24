@@ -191,6 +191,6 @@ def predict_image_class(image_color: np.ndarray):
     HOG_LBP_prediction = predict_class(color_arr)
     SIFT_prediction = SIFT_Predict(gray_arr)
     segmentedImage = None
-    if(HOG_LBP_prediction["SVM_HOG"] == 1):
-        segmentedImage = predict_and_display_from_image_path(gray_arr, segmentation_model_path)
+    # if(HOG_LBP_prediction["SVM_HOG"] == 1):
+    #     segmentedImage = predict_and_display_from_image_path(gray_arr, segmentation_model_path)
     return [{"HOG_LBP_Models": HOG_LBP_prediction}, {"SIFT Model": SIFT_prediction}, segmentedImage]
